@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class ArrayWorkerTest {
     @Test
-    public void (){
+    public void TestArrayWorkerPositive (){
 
         int[] array = {1,2,3,4,5};
         int expected = 5;
