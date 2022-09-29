@@ -1,6 +1,6 @@
 package by.itstep.tia.model.logic;
 
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class StudentsManagerTest {
@@ -15,7 +15,7 @@ public class StudentsManagerTest {
 
                double actual = StudentsManager.calcAvgStudentMark(marks);
 
-        Assert.assertEquals(expected, actual, 0.001);
+        assertEquals(expected, actual, 0.001);
 
 
     }
@@ -28,7 +28,7 @@ public class StudentsManagerTest {
 
         double actual = StudentsManager.calcAvgStudentMark(marks);
 
-        Assert.assertEquals(expected, actual, 0);
+        assertEquals(expected, actual, 0);
     }
 
     @Test
@@ -43,6 +43,6 @@ public class StudentsManagerTest {
       //  double actual = StudentsManager.calcAvgStudentMark(marks);
         //  или
         double actual = StudentsManager.calcAvgStudentMark(null);
-        Assert.assertEquals(expected, actual, 0);
+        assertEquals(expected, actual, 0);
     }
 }
